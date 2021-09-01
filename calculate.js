@@ -8,8 +8,10 @@ const web3 = new Web3(new Web3.providers.HttpProvider("https://polygon-mainnet.i
 const ETHERSCAN_API_KEY = "IV7ZFBB1SH3DKM6QB3435K3X4XZF2NQECW";
 const TEL_ADDRESS = "0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32";
 
-const POOL_NAME = "TEL60WETH20USDC20";
+const POOL_NAME = "TEL50BAL50";
 const SNAPSHOT_DURATION = 60*60*24; // 1 day
+
+const POLYGONSCAN_API_DELAY = 200;
 
 
 const STAKING_POOLS = {
@@ -82,6 +84,7 @@ function solRequire(condition, err) {
 }
 
 function lastTimeRewardApplicable(ts) {
+    // return ethers.BigNumber.from(ts); // TODO
     return ethers.BigNumber.from(Math.min(ts, periodFinish));
 }
 
@@ -143,9 +146,18 @@ const getERC20TransferEvents = async (
     return data.result;
 };
 
+function waitPromise(t) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, t);
+    })
+}
+
 async function getBlock(bn) {
     let res = await fetch(`https://api.polygonscan.com/api?module=block&action=getblockreward&blockno=${bn}&apikey=${ETHERSCAN_API_KEY}`);
     let json = await res.json();
+    await waitPromise(POLYGONSCAN_API_DELAY);
     return json.result;
 }
 
@@ -155,6 +167,7 @@ async function getBlockByTs(ts) {
     if (json.message != "OK") {
         return null;
     }
+    await waitPromise(POLYGONSCAN_API_DELAY);
     return getBlock(json.result-0);
 }
 
@@ -173,6 +186,7 @@ async function getContractInstance(address) {
 const OUTPUT = {snapshots: []};
 
 async function takeSnapshot(endBlock, endTs) {
+    console.log('snap ' + endBlock);
     const snap = {};
     const lastSnap = OUTPUT.snapshots[OUTPUT.snapshots.length - 1];
     if (OUTPUT.snapshots.length === 0) {
@@ -239,6 +253,7 @@ async function takeSnapshot(endBlock, endTs) {
     const topBlockTs = Math.floor((new Date()-0)/1000);
 
     for (let i = 0; i < stakingPoolEvents.length; i++) {
+        console.log('txn',i)
         const ev = stakingPoolEvents[i];
         if (ev.contractAddress.toLowerCase() === TEL_ADDRESS.toLowerCase()) {
             // claim
@@ -257,14 +272,25 @@ async function takeSnapshot(endBlock, endTs) {
         //     console.log(ev);
         // }
 
-        if (i === stakingPoolEvents.length - 1) {
-            await takeSnapshot(topBlockNum, topBlockTs);
-        }
-        else if (currentSnapshotEndBlock && ev.blockNumber - 0 < currentSnapshotEndBlock.blockNumber - 0 && stakingPoolEvents[i+1].blockNumber - 0 > currentSnapshotEndBlock.blockNumber - 0) {
+        // if (i === stakingPoolEvents.length - 1) {
+        //     // while topBlockNum is after the current snapshot period, take snapshot and move forward (snapEndBlock will be null for final snapshot)
+            
+        // }
+        while (currentSnapshotEndBlock && i + 1 < stakingPoolEvents.length && stakingPoolEvents[i+1].blockNumber - 0 > currentSnapshotEndBlock.blockNumber - 0) {
+            // while ev[i+1] is after the current snapshot period, take snapshot and move forward
             await takeSnapshot(currentSnapshotEndBlock.blockNumber - 0, currentSnapshotEndBlock.timeStamp - 0);
             currentSnapshotEndBlock = await getBlockByTs(currentSnapshotEndBlock.timeStamp - 0 + SNAPSHOT_DURATION);
         }
     }
+
+    console.log("Finished processing transactions");
+    
+    while (currentSnapshotEndBlock != null) {
+        console.log(currentSnapshotEndBlock);
+        await takeSnapshot(currentSnapshotEndBlock.blockNumber - 0, currentSnapshotEndBlock.timeStamp - 0);
+        currentSnapshotEndBlock = await getBlockByTs(currentSnapshotEndBlock - 0 + SNAPSHOT_DURATION);
+    }
+    await takeSnapshot(topBlockNum, topBlockTs);
 
     const stakingContractInstance = await getContractInstance(STAKING_POOL_CONTRACT);
 
