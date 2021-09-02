@@ -5,10 +5,10 @@ const fs = require('fs');
 const web3 = new Web3(new Web3.providers.HttpProvider("https://polygon-mainnet.infura.io/v3/25a04237edaa4aaebffda3c53ce4cf6d"));
 
 
-const ETHERSCAN_API_KEY = "IV7ZFBB1SH3DKM6QB3435K3X4XZF2NQECW";
+const POLYGONSCAN_API_KEY = "IV7ZFBB1SH3DKM6QB3435K3X4XZF2NQECW";
 const TEL_ADDRESS = "0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32";
 
-const POOL_NAME = "TEL50BAL50";
+const POOL_NAME = "TEL60WETH20USDC20";
 const SNAPSHOT_DURATION = 60*60*24; // 1 day
 
 const POLYGONSCAN_API_DELAY = 200;
@@ -139,7 +139,7 @@ const getERC20TransferEvents = async (
     startBlock = 0,
     endBlock = 9999999999999 // TODO: probably not ideal, though the end of the period should be accounted for in the "smart contract" logic anyway
 ) => {
-    const URL = `https://api.polygonscan.com/api?module=account&action=tokentx&address=${erc20Address}&startblock=${startBlock}&endblock=${endBlock}&sort=asc&apikey=${ETHERSCAN_API_KEY}`;
+    const URL = `https://api.polygonscan.com/api?module=account&action=tokentx&address=${erc20Address}&startblock=${startBlock}&endblock=${endBlock}&sort=asc&apikey=${POLYGONSCAN_API_KEY}`;
 
     const data = await fetch(URL).then((x) => x.json());
 
@@ -155,14 +155,14 @@ function waitPromise(t) {
 }
 
 async function getBlock(bn) {
-    let res = await fetch(`https://api.polygonscan.com/api?module=block&action=getblockreward&blockno=${bn}&apikey=${ETHERSCAN_API_KEY}`);
+    let res = await fetch(`https://api.polygonscan.com/api?module=block&action=getblockreward&blockno=${bn}&apikey=${POLYGONSCAN_API_KEY}`);
     let json = await res.json();
     await waitPromise(POLYGONSCAN_API_DELAY);
     return json.result;
 }
 
 async function getBlockByTs(ts) {
-    let res = await fetch(`https://api.polygonscan.com/api?module=block&action=getblocknobytime&timestamp=${ts - 0}&closest=before&apikey=${ETHERSCAN_API_KEY}`);
+    let res = await fetch(`https://api.polygonscan.com/api?module=block&action=getblocknobytime&timestamp=${ts - 0}&closest=before&apikey=${POLYGONSCAN_API_KEY}`);
     let json = await res.json();
     if (json.message != "OK") {
         return null;
@@ -172,7 +172,7 @@ async function getBlockByTs(ts) {
 }
 
 async function getTransactionsForAddress(address) {
-    let res = await fetch(`https://api.polygonscan.com/api?module=account&action=txlist&address=${address}&startblock=0&endblock=999999999999&sort=desc&apikey=${ETHERSCAN_API_KEY}`)
+    let res = await fetch(`https://api.polygonscan.com/api?module=account&action=txlist&address=${address}&startblock=0&endblock=999999999999&sort=desc&apikey=${POLYGONSCAN_API_KEY}`)
     return (await res.json()).result;
 }
 
@@ -284,7 +284,7 @@ async function takeSnapshot(endBlock, endTs) {
     }
 
     console.log("Finished processing transactions");
-    
+
     while (currentSnapshotEndBlock != null) {
         console.log(currentSnapshotEndBlock);
         await takeSnapshot(currentSnapshotEndBlock.blockNumber - 0, currentSnapshotEndBlock.timeStamp - 0);
@@ -297,6 +297,9 @@ async function takeSnapshot(endBlock, endTs) {
     const addys = Object.keys(_balances);
 
     // create final state object
+
+    console.log('Creating final state');
+
     const finalState = {};
     
     for (let i = 0; i < addys.length; i++) {
