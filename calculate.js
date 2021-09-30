@@ -8,13 +8,30 @@ const web3 = new Web3(new Web3.providers.HttpProvider("https://polygon-mainnet.i
 const POLYGONSCAN_API_KEY = "IV7ZFBB1SH3DKM6QB3435K3X4XZF2NQECW";
 const TEL_ADDRESS = "0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32";
 
-const POOL_NAME = "TEL60WETH20USDC20";
-const SNAPSHOT_DURATION = 60*60*24; // 1 day
+const POOL_NAME = "TEL80USDC20";
+const SNAPSHOT_DURATION = 60*60*24*14; // 1 day
 
-const POLYGONSCAN_API_DELAY = 200;
+const POLYGONSCAN_API_DELAY = 1000;
 
+//681083764762295241750177
+
+
+// MAKE SURE THE AMOUNT OF TEL THE CONTRACT IS ACCRUING IS NOT MORE THAN EXPECTED
+// SIMILARLY, SEE IF THE TOTAL AMOUNT THIS SCRIPT IS SAYING LINES UP WITH WHAT'S EXPECTED
 
 const STAKING_POOLS = {
+    TEL50WETH50: {
+        address: "0x09315f2577c2BcceE0119790F706EB70Dd67c2DF",
+        stakingToken: "0xfc2fc983a411c4b1e238f7eb949308cf0218c750",
+        startBlock: 16874268,
+        totalRewards: 1000000
+    },
+    TELAAVE: {
+        address: "0x8E8def06290D25b999a1E5d90710E09C0B2B5280",
+        stakingToken: "0x4917bc6b8e705ad462ef525937e7eb7c6c87c356",
+        startBlock: 	16624704,
+        totalRewards: 750000
+    },
     TEL60WMATIC20USDC20: {
         address: "0x6a28b74263EbA6b37C0b0c426f7Dee5173380200",
         stakingToken: "0xd208168d2a512240eb82582205d94a0710bce4e7",
@@ -75,7 +92,7 @@ let userRewardPerTokenPaid = {};
 let rewards = {};
 let rewardRate = ethers.BigNumber.from(TOTAL_REWARDS).mul(1e18+'').div(REWARDS_DURATION);
 let lastUpdateTime = -1;
-let periodFinish = 999999999999999; // TODO (doesn't matter for now since the reward period is still going)
+let periodFinish = 1632956225; // TODO (doesn't matter for now since the reward period is still going)
 
 let _claimed = {};
 
@@ -91,6 +108,9 @@ function lastTimeRewardApplicable(ts) {
 function rewardPerToken(ts) {
     if (_totalSupply == 0) {
         return rewardPerTokenStored;
+    }
+    if (lastTimeRewardApplicable(ts) < lastUpdateTime) {
+        throw new Error('eee');
     }
     return rewardPerTokenStored.add(
         lastTimeRewardApplicable(ts).sub(lastUpdateTime).mul(rewardRate).mul(1e18+'').div(_totalSupply)
@@ -125,7 +145,7 @@ function withdraw(account, amount, ts) {
 
 function updateReward(account, ts) {
     rewardPerTokenStored = rewardPerToken(ts);
-    lastUpdateTime = ts;
+    lastUpdateTime = lastTimeRewardApplicable(ts);
     if (account != (0)) {
         rewards[account] = earned(account, ts);
         userRewardPerTokenPaid[account] = rewardPerTokenStored;
@@ -142,6 +162,10 @@ const getERC20TransferEvents = async (
     const URL = `https://api.polygonscan.com/api?module=account&action=tokentx&address=${erc20Address}&startblock=${startBlock}&endblock=${endBlock}&sort=asc&apikey=${POLYGONSCAN_API_KEY}`;
 
     const data = await fetch(URL).then((x) => x.json());
+
+    if (data.result.length === 10000) {
+        throw new Error("hit 10k erc20 transfer limit");
+    }
 
     return data.result;
 };
@@ -253,8 +277,12 @@ async function takeSnapshot(endBlock, endTs) {
     const topBlockTs = Math.floor((new Date()-0)/1000);
 
     for (let i = 0; i < stakingPoolEvents.length; i++) {
-        console.log('txn',i)
         const ev = stakingPoolEvents[i];
+        // if (ev.to.toLowerCase() === "0x1355fEBa6C34263E75A89b1A72928239EDcbf6e1".toLowerCase()) {
+        //     console.log('mine', ev.value);
+        // }
+        // console.log('txn',i);
+
         if (ev.contractAddress.toLowerCase() === TEL_ADDRESS.toLowerCase()) {
             // claim
             _claimed[ev.to.toLowerCase()] = ethers.BigNumber.from(_claimed[ev.to.toLowerCase()] || 0).add(ethers.BigNumber.from(ev.value).mul(1e16+''));
@@ -312,6 +340,6 @@ async function takeSnapshot(endBlock, endTs) {
         };
     }
     OUTPUT.finalState = finalState;
-
+    // console.log(rewardPerToken(ethers.BigNumber.from(topBlockTs))-0, await stakingContractInstance.methods.rewardPerTokenA().call()-0);
     fs.writeFileSync(`./${POOL_NAME}.json`, JSON.stringify(OUTPUT, null, 4));
 })();
