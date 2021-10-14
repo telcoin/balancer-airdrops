@@ -8,7 +8,7 @@ const web3 = new Web3(new Web3.providers.HttpProvider("https://polygon-mainnet.i
 const POLYGONSCAN_API_KEY = "IV7ZFBB1SH3DKM6QB3435K3X4XZF2NQECW";
 const TEL_ADDRESS = "0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32";
 
-const POOL_NAME = "TEL80USDC20";
+const POOL_NAME = "TEL50BAL50";
 const SNAPSHOT_DURATION = 60*60*24*14; // 1 day
 
 const POLYGONSCAN_API_DELAY = 1000;
@@ -20,18 +20,6 @@ const POLYGONSCAN_API_DELAY = 1000;
 // SIMILARLY, SEE IF THE TOTAL AMOUNT THIS SCRIPT IS SAYING LINES UP WITH WHAT'S EXPECTED
 
 const STAKING_POOLS = {
-    TEL50WETH50: {
-        address: "0x09315f2577c2BcceE0119790F706EB70Dd67c2DF",
-        stakingToken: "0xfc2fc983a411c4b1e238f7eb949308cf0218c750",
-        startBlock: 16874268,
-        totalRewards: 1000000
-    },
-    TELAAVE: {
-        address: "0x8E8def06290D25b999a1E5d90710E09C0B2B5280",
-        stakingToken: "0x4917bc6b8e705ad462ef525937e7eb7c6c87c356",
-        startBlock: 	16624704,
-        totalRewards: 750000
-    },
     TEL60WMATIC20USDC20: {
         address: "0x6a28b74263EbA6b37C0b0c426f7Dee5173380200",
         stakingToken: "0xd208168d2a512240eb82582205d94a0710bce4e7",
@@ -92,7 +80,7 @@ let userRewardPerTokenPaid = {};
 let rewards = {};
 let rewardRate = ethers.BigNumber.from(TOTAL_REWARDS).mul(1e18+'').div(REWARDS_DURATION);
 let lastUpdateTime = -1;
-let periodFinish = 1632956225; // TODO (doesn't matter for now since the reward period is still going)
+let periodFinish = 0;
 
 let _claimed = {};
 
@@ -255,6 +243,11 @@ async function takeSnapshot(endBlock, endTs) {
 }
 
 (async () => {
+    const stakingContractInstance = await getContractInstance(STAKING_POOL_CONTRACT);
+
+    periodFinish = await stakingContractInstance.methods.periodFinish().call();
+    // return;
+
     let startBlock = await getBlock(START_BLOCK);
     lastUpdateTime = ethers.BigNumber.from(startBlock.timeStamp);
 
@@ -320,7 +313,7 @@ async function takeSnapshot(endBlock, endTs) {
     }
     await takeSnapshot(topBlockNum, topBlockTs);
 
-    const stakingContractInstance = await getContractInstance(STAKING_POOL_CONTRACT);
+    
 
     const addys = Object.keys(_balances);
 

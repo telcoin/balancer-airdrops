@@ -10,10 +10,7 @@ const POOLS = [
 const ethers = require('ethers');
 const fs = require('fs');
 
-POOLS.forEach(POOL_NAME => {    
-    const INPUT = require(`./${POOL_NAME}.json`);
-    const state = INPUT.finalState;
-    
+function process(state) {
     const addys = Object.keys(state);
     
     
@@ -25,6 +22,40 @@ POOLS.forEach(POOL_NAME => {
         
         outputString += [addy, a, x.totalEarned/1e18, x.totalClaimed/1e18, x.rewardPending/1e18].join(',') + '\n';
     })
+
+    return outputString;
+}
+
+
+const master = {};
+
+
+POOLS.forEach(POOL_NAME => {    
+    const INPUT = require(`./${POOL_NAME}.json`);
+    const state = INPUT.finalState;
     
+    const addys = Object.keys(state);
+    
+    
+    let outputString = process(state);
+
     fs.writeFileSync(`./csvs/${POOL_NAME}.csv`, outputString);
+    
+    addys.forEach(addy => {
+        if (!master[addy]) {
+            master[addy] = {
+                totalEarned: ethers.BigNumber.from('0'),
+                totalClaimed: ethers.BigNumber.from('0'),
+                rewardPending: ethers.BigNumber.from('0')
+            }
+        }
+
+        master[addy].totalEarned = master[addy].totalEarned.add(state[addy].totalEarned);
+        master[addy].totalClaimed = master[addy].totalClaimed.add(state[addy].totalClaimed);
+        master[addy].rewardPending = master[addy].rewardPending.add(state[addy].rewardPending);
+    })
+    
 })
+
+
+fs.writeFileSync('./csvs/MASTER.csv', process(master));

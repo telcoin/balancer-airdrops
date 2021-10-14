@@ -565,8 +565,8 @@
         {
             "startBlock": 19151461,
             "startBlockTs": 1631747426,
-            "endBlock": 19390091,
-            "endBlockTs": 1632327953,
+            "endBlock": 19659520,
+            "endBlockTs": 1632957024,
             "addresses": {
                 "0x258d77ad7f27185bd8f7e3b024cd075a9fa576b0": {
                     "balance": "0",
@@ -576,11 +576,11 @@
                     "claimedThisPeriod": "0"
                 },
                 "0xc7d35c4c06d54bee556228032e40e9501a6bee81": {
-                    "balance": "64477664219999999980000",
-                    "totalEarned": "290296383020657158379135",
-                    "earnedThisPeriod": "57784995609246939743396",
-                    "totalClaimed": "109290270000000000000000",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "326532298305293861880469",
+                    "earnedThisPeriod": "94020910893883643244730",
+                    "totalClaimed": "244391840000000000000000",
+                    "claimedThisPeriod": "135101570000000000000000"
                 },
                 "0x1bc7998b9f091ff13792ef1aff11c8a4392971d2": {
                     "balance": "0",
@@ -591,29 +591,29 @@
                 },
                 "0xac1513a6c4c3e74cb0c1f77c8cbbbf22a2400e33": {
                     "balance": "226104348969072539600000",
-                    "totalEarned": "858314967314983520334355",
-                    "earnedThisPeriod": "162761236492001043108499",
-                    "totalClaimed": "289586830000000000000000",
-                    "claimedThisPeriod": "0"
+                    "totalEarned": "1004914336514223615052570",
+                    "earnedThisPeriod": "309360605691241137826714",
+                    "totalClaimed": "719185090000000000000000",
+                    "claimedThisPeriod": "429598260000000000000000"
                 },
                 "0x12fe8ececabd64640578c01c7bb9e7404028c10f": {
                     "balance": "395270000000000000000",
-                    "totalEarned": "1602554703577829871332",
-                    "earnedThisPeriod": "284535146013459483569",
+                    "totalEarned": "1858836075110890317722",
+                    "earnedThisPeriod": "540816517546519929959",
                     "totalClaimed": "39520000000000000000",
                     "claimedThisPeriod": "0"
                 },
                 "0x5be4cb2f7b2c8ab1b0aae6cf5aa4a1cc398aeb6d": {
-                    "balance": "4533387140276367663319",
-                    "totalEarned": "18145629249489468218680",
-                    "earnedThisPeriod": "3263359151704090376599",
-                    "totalClaimed": "1042850000000000000000",
-                    "claimedThisPeriod": "0"
+                    "balance": "7140276367663319",
+                    "totalEarned": "20995338281657385256637",
+                    "earnedThisPeriod": "6113068183872007414556",
+                    "totalClaimed": "15491700000000000000000",
+                    "claimedThisPeriod": "14448850000000000000000"
                 },
                 "0xada16d1880d60e1bc6258923981a6777cabf4f53": {
                     "balance": "785930000000000000000",
-                    "totalEarned": "3184497030899628822382",
-                    "earnedThisPeriod": "565751783101065630889",
+                    "totalEarned": "3694070786380637238480",
+                    "earnedThisPeriod": "1075325538582074046987",
                     "totalClaimed": "1092440000000000000000",
                     "claimedThisPeriod": "0"
                 },
@@ -660,25 +660,25 @@
                     "claimedThisPeriod": "0"
                 },
                 "0xf23cac0f7d6c81acf1138d1296fd2e8655d63670": {
-                    "balance": "13891840000000000000000",
-                    "totalEarned": "55526103885733597502478",
-                    "earnedThisPeriod": "10000042307272540269241",
-                    "totalClaimed": "0",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "64407472428692779639201",
+                    "earnedThisPeriod": "18881410850231722405964",
+                    "totalClaimed": "47649010000000000000000",
+                    "claimedThisPeriod": "47649010000000000000000"
                 },
                 "0xbf331a476e2e31f8fe0aac6a15db0e873a2249b7": {
                     "balance": "175000000000000000000",
-                    "totalEarned": "2159099721760008674392",
-                    "earnedThisPeriod": "125973766165799098400",
+                    "totalEarned": "2272564543320677528892",
+                    "earnedThisPeriod": "239438587726467952900",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
                 "0x8c3de974d92d0bf15387eff82d68bf7223fcd6f4": {
                     "balance": "63474860000000000000000",
-                    "totalEarned": "120807631848379307016493",
-                    "earnedThisPeriod": "15105517312637069462540",
-                    "totalClaimed": "76995330000000000000000",
-                    "claimedThisPeriod": "0"
+                    "totalEarned": "161962852782598947277909",
+                    "earnedThisPeriod": "56260738246856709723956",
+                    "totalClaimed": "97942030000000000000000",
+                    "claimedThisPeriod": "20946700000000000000000"
                 },
                 "0x63f660dd40436394377452613c165c51cdbd4de6": {
                     "balance": "0",
@@ -695,18 +695,18 @@
                     "claimedThisPeriod": "0"
                 },
                 "0xce2e6a4b8ade81fae333c235001238b7674cfdb1": {
-                    "balance": "141560000000000000000",
-                    "totalEarned": "537794079906654704584",
-                    "earnedThisPeriod": "101901979076745830683",
-                    "totalClaimed": "172700000000000000000",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "607274420342014381132",
+                    "earnedThisPeriod": "171382319512105507231",
+                    "totalClaimed": "457230000000000000000",
+                    "claimedThisPeriod": "284530000000000000000"
                 },
                 "0x9793d88fd35101ee9ecddb4719011653912294c9": {
-                    "balance": "15952000000000000000000",
-                    "totalEarned": "58926651206408156102712",
-                    "earnedThisPeriod": "11483048673581869815296",
-                    "totalClaimed": "19965880000000000000000",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "66295107315157349352584",
+                    "earnedThisPeriod": "18851504782331063065168",
+                    "totalClaimed": "49796120000000000000000",
+                    "claimedThisPeriod": "29830240000000000000000"
                 },
                 "0x764d4b3eaa1f2c09a03576422c25c546ba4fc5e0": {
                     "balance": "0",
@@ -716,16 +716,16 @@
                     "claimedThisPeriod": "0"
                 },
                 "0x9f81bfbc8d7c1bc0496e45ddc744da78ca8e1a6b": {
-                    "balance": "44834338401456077678449",
-                    "totalEarned": "156822749864113234197271",
-                    "earnedThisPeriod": "31964279564991195029749",
-                    "totalClaimed": "115871320000000000000000",
-                    "claimedThisPeriod": "22176350000000000000000"
+                    "balance": "0",
+                    "totalEarned": "185258033774167706915780",
+                    "earnedThisPeriod": "60399563475045667748258",
+                    "totalClaimed": "138288480000000000000000",
+                    "claimedThisPeriod": "44593510000000000000000"
                 },
                 "0xef3c44e0cb330fbdb6657b2bd39383a26ac62986": {
                     "balance": "1132440000000000000000",
-                    "totalEarned": "4006323133163816769870",
-                    "earnedThisPeriod": "815187038610271605669",
+                    "totalEarned": "4740563719039038698956",
+                    "earnedThisPeriod": "1549427624485493534755",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
@@ -745,10 +745,10 @@
                 },
                 "0x1a1608d260d0044f91b0d1721deb14ad6c8bac0f": {
                     "balance": "30597930000000000000000",
-                    "totalEarned": "97054665338983939676114",
-                    "earnedThisPeriod": "22025922737014224039464",
-                    "totalClaimed": "71599060000000000000000",
-                    "claimedThisPeriod": "17440790000000000000000"
+                    "totalEarned": "116893457725131576037093",
+                    "earnedThisPeriod": "41864715123161860400443",
+                    "totalClaimed": "85674090000000000000000",
+                    "claimedThisPeriod": "31515820000000000000000"
                 },
                 "0x555f9daad28487cee43cd226b9a2f33d57c98964": {
                     "balance": "0",
@@ -758,11 +758,11 @@
                     "claimedThisPeriod": "0"
                 },
                 "0x33833541a74ef975d6e5eddeb636201694e32da9": {
-                    "balance": "6184810000000000000000",
-                    "totalEarned": "18328737011321249599849",
-                    "earnedThisPeriod": "4452136049827976695859",
-                    "totalClaimed": "0",
-                    "claimedThisPeriod": "0"
+                    "balance": "7047507529772344000000",
+                    "totalEarned": "22334175084489409730706",
+                    "earnedThisPeriod": "8457574122996136826716",
+                    "totalClaimed": "16575290000000000000000",
+                    "claimedThisPeriod": "16575290000000000000000"
                 },
                 "0x248784af80094fe92f915674b2f4409366443562": {
                     "balance": "0",
@@ -773,8 +773,8 @@
                 },
                 "0xb9c462885ebef1e8ad72f45e410d623f1bfbf2b4": {
                     "balance": "77670000000000000000",
-                    "totalEarned": "199819539205340624608",
-                    "earnedThisPeriod": "55910756674843519844",
+                    "totalEarned": "250178468866010052774",
+                    "earnedThisPeriod": "106269686335512948010",
                     "totalClaimed": "99410000000000000000",
                     "claimedThisPeriod": "0"
                 },
@@ -794,87 +794,87 @@
                 },
                 "0x681fe9c0045d0ee67bf0940d58cd57c3b04952d7": {
                     "balance": "5000000000000000",
-                    "totalEarned": "232612217517346702215",
-                    "earnedThisPeriod": "3599250461879975",
+                    "totalEarned": "232615459369391292753",
+                    "earnedThisPeriod": "6841102506470513",
                     "totalClaimed": "124540000000000000000",
                     "claimedThisPeriod": "0"
                 },
                 "0xc3bf2ba5314af887b7f8db20c16d81bf6c5f6933": {
                     "balance": "923770000000000000000",
-                    "totalEarned": "2156257125034664170713",
-                    "earnedThisPeriod": "664975919834172760737",
+                    "totalEarned": "2755202257680944557693",
+                    "earnedThisPeriod": "1263921052480453147717",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
                 "0xf3b31c1af8654a902eb7a23ad1faa8a94d43f8b8": {
-                    "balance": "179125781273203620000",
-                    "totalEarned": "383905150754448003662",
-                    "earnedThisPeriod": "121839115366656217791",
-                    "totalClaimed": "285610000000000000000",
-                    "claimedThisPeriod": "92950000000000000000"
+                    "balance": "269873529971341630000",
+                    "totalEarned": "513468525363404073819",
+                    "earnedThisPeriod": "251402489975612287948",
+                    "totalClaimed": "358780000000000000000",
+                    "claimedThisPeriod": "166120000000000000000"
                 },
                 "0x1ce7c4930550677b6578c76107e44db403961002": {
-                    "balance": "41117489999999999800000",
-                    "totalEarned": "62546960918592456934889",
-                    "earnedThisPeriod": "29598428974769044258722",
-                    "totalClaimed": "13464180000000000000000",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "88386541663571378981320",
+                    "earnedThisPeriod": "55438009719747966305153",
+                    "totalClaimed": "66692670000000000000000",
+                    "claimedThisPeriod": "53228490000000000000000"
                 },
                 "0xcac2edcd082628ba3ba31b3b74537792550319e6": {
-                    "balance": "191655883091775041900",
-                    "totalEarned": "173934594650042793855",
-                    "earnedThisPeriod": "84142390297845993092",
-                    "totalClaimed": "129760000000000000000",
-                    "claimedThisPeriod": "61580000000000000000"
+                    "balance": "409816979997054843900",
+                    "totalEarned": "395881481573146249534",
+                    "earnedThisPeriod": "306089277220949448771",
+                    "totalClaimed": "282710000000000000000",
+                    "claimedThisPeriod": "214530000000000000000"
                 },
                 "0x0ae11191d4ddae4c726bef6c542254f98084fd0e": {
-                    "balance": "2498952774441262600000",
-                    "totalEarned": "5284912499754278647008",
-                    "earnedThisPeriod": "1798871385524791499792",
-                    "totalClaimed": "0",
-                    "claimedThisPeriod": "0"
+                    "balance": "0",
+                    "totalEarned": "6880753179759209465407",
+                    "earnedThisPeriod": "3394712065529722318191",
+                    "totalClaimed": "5147840000000000000000",
+                    "claimedThisPeriod": "5147840000000000000000"
                 },
                 "0xd3ec9916304b3d875125b4d3801157b85cf37253": {
                     "balance": "8475959999999999000000",
-                    "totalEarned": "17882518906399365493782",
-                    "earnedThisPeriod": "6101420588975236572004",
+                    "totalEarned": "23378080557572889325342",
+                    "earnedThisPeriod": "11596982240148760403564",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
                 "0x1d652ddc63152e9099e6802e7308d0b0b74b3fea": {
                     "balance": "6754760000000000000000",
-                    "totalEarned": "14186319165021162519414",
-                    "earnedThisPeriod": "4862414609977674959476",
+                    "totalEarned": "18565905668364839957257",
+                    "earnedThisPeriod": "9242001113321352397319",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
                 "0xf91a4b731c8dea1b2802edc6d9560b41969ca8e1": {
                     "balance": "257120668155285270000",
-                    "totalEarned": "537813907364839886027",
-                    "earnedThisPeriod": "185088336723359618436",
-                    "totalClaimed": "0",
-                    "claimedThisPeriod": "0"
+                    "totalEarned": "704523340117979279441",
+                    "earnedThisPeriod": "351797769476499011850",
+                    "totalClaimed": "519380000000000000000",
+                    "claimedThisPeriod": "519380000000000000000"
                 },
                 "0x8f0d4cd6f0dc60e315188ccc1c42f266e8de86ae": {
-                    "balance": "128874290000000000000000",
-                    "totalEarned": "232904552295062490076804",
-                    "earnedThisPeriod": "92770169561390749079658",
-                    "totalClaimed": "0",
-                    "claimedThisPeriod": "0"
+                    "balance": "135356090000000000000000",
+                    "totalEarned": "318935336463118870321800",
+                    "earnedThisPeriod": "178800953729447129324654",
+                    "totalClaimed": "241085180000000000000000",
+                    "claimedThisPeriod": "241085180000000000000000"
                 },
                 "0x80455babe586df367395bcfa35b2f904d7cce070": {
                     "balance": "7211430000000001000000",
-                    "totalEarned": "8495461218145522085955",
-                    "earnedThisPeriod": "5191148551663021246563",
+                    "totalEarned": "13171139036129832433793",
+                    "earnedThisPeriod": "9866826369647331594401",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 },
                 "0x035f4a089e99bb14fa010a6ce80e9640e1dd01fc": {
                     "balance": "21741852078065476040457",
-                    "totalEarned": "20221510854492402852876",
-                    "earnedThisPeriod": "15650874226820648477078",
-                    "totalClaimed": "15001830000000000000000",
-                    "claimedThisPeriod": "13045070000000000000000"
+                    "totalEarned": "34318284376984726078748",
+                    "earnedThisPeriod": "29747647749312971702950",
+                    "totalClaimed": "23046280000000000000000",
+                    "claimedThisPeriod": "21089520000000000000000"
                 },
                 "0x248bf13aa779c4c9822df233d18607147d348473": {
                     "balance": "0",
@@ -884,16 +884,381 @@
                     "claimedThisPeriod": "73080000000000000000"
                 },
                 "0x5e225490e47249f364fa20e68febddb3f74b297f": {
-                    "balance": "7914042188659422132318",
-                    "totalEarned": "1352301611675325131695",
-                    "earnedThisPeriod": "1352301611675325131695",
-                    "totalClaimed": "633120000000000000000",
-                    "claimedThisPeriod": "633120000000000000000"
+                    "balance": "0",
+                    "totalEarned": "2348910529374981072040",
+                    "earnedThisPeriod": "2348910529374981072040",
+                    "totalClaimed": "1503660000000000000000",
+                    "claimedThisPeriod": "1503660000000000000000"
                 },
                 "0x54c6adea5d5f8613c1f43b854db77cc5ffa7e583": {
                     "balance": "6534933101129729398958",
-                    "totalEarned": "672292907637889898235",
-                    "earnedThisPeriod": "672292907637889898235",
+                    "totalEarned": "4909350154669850470097",
+                    "earnedThisPeriod": "4909350154669850470097",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0xaa0833da4dd529316f2a46957346986f615ffa62": {
+                    "balance": "138470550000000000000000",
+                    "totalEarned": "74480985224455859753566",
+                    "earnedThisPeriod": "74480985224455859753566",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0xeff139c7b2a2ab9f052aab79de77f09b39839aa7": {
+                    "balance": "47350000000000000000",
+                    "totalEarned": "16733024666780715599",
+                    "earnedThisPeriod": "16733024666780715599",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                }
+            }
+        },
+        {
+            "startBlock": 19659520,
+            "startBlockTs": 1632957024,
+            "endBlock": 19686446,
+            "endBlockTs": 1633019921,
+            "addresses": {
+                "0x258d77ad7f27185bd8f7e3b024cd075a9fa576b0": {
+                    "balance": "0",
+                    "totalEarned": "7123766511067398085913",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "1651660000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xc7d35c4c06d54bee556228032e40e9501a6bee81": {
+                    "balance": "0",
+                    "totalEarned": "326532298305293861880469",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "244391840000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x1bc7998b9f091ff13792ef1aff11c8a4392971d2": {
+                    "balance": "0",
+                    "totalEarned": "13877421324496613673087",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "10330040000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xac1513a6c4c3e74cb0c1f77c8cbbbf22a2400e33": {
+                    "balance": "226104348969072539600000",
+                    "totalEarned": "1004915191035208383073335",
+                    "earnedThisPeriod": "854520984768020765",
+                    "totalClaimed": "719185090000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x12fe8ececabd64640578c01c7bb9e7404028c10f": {
+                    "balance": "395270000000000000000",
+                    "totalEarned": "1858837568963225265320",
+                    "earnedThisPeriod": "1493852334947598",
+                    "totalClaimed": "39520000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x5be4cb2f7b2c8ab1b0aae6cf5aa4a1cc398aeb6d": {
+                    "balance": "7140276367663319",
+                    "totalEarned": "20995338281684370655286",
+                    "earnedThisPeriod": "26985398649",
+                    "totalClaimed": "15491700000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xada16d1880d60e1bc6258923981a6777cabf4f53": {
+                    "balance": "785930000000000000000",
+                    "totalEarned": "3694073756662635885900",
+                    "earnedThisPeriod": "2970281998647420",
+                    "totalClaimed": "1092440000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x86d71b18817b466d2f08bee4c5352b724bbe9e2a": {
+                    "balance": "0",
+                    "totalEarned": "9935799046794350321130",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "3795750000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x5442455f81ada56d44013ebc578b2ebee93697be": {
+                    "balance": "0",
+                    "totalEarned": "132845780234905646749",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "53010000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x8a3e6d8e8d08f68d480824646707d463f27655ab": {
+                    "balance": "0",
+                    "totalEarned": "504982237423247589904",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "198750000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xb396f729a3eb76f9be3259b3b8c238e2c75341c2": {
+                    "balance": "0",
+                    "totalEarned": "34064572288148310003728",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "24258100000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x2d782f1d07d3008b58444f761fac8386affdd37a": {
+                    "balance": "0",
+                    "totalEarned": "34778838445976119124072",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "26794050000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x48ef8acb0faa379b0ffa10d3e1aadc791f37cbc7": {
+                    "balance": "0",
+                    "totalEarned": "191261455605115313773458",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "124834240000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xf23cac0f7d6c81acf1138d1296fd2e8655d63670": {
+                    "balance": "0",
+                    "totalEarned": "64407472428692779639201",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "47649010000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xbf331a476e2e31f8fe0aac6a15db0e873a2249b7": {
+                    "balance": "175000000000000000000",
+                    "totalEarned": "2272565204701907108242",
+                    "earnedThisPeriod": "661381229579350",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0x8c3de974d92d0bf15387eff82d68bf7223fcd6f4": {
+                    "balance": "0",
+                    "totalEarned": "161963092674490114004196",
+                    "earnedThisPeriod": "239891891166726287",
+                    "totalClaimed": "115714990000000000000000",
+                    "claimedThisPeriod": "17772960000000000000000"
+                },
+                "0x63f660dd40436394377452613c165c51cdbd4de6": {
+                    "balance": "0",
+                    "totalEarned": "7709664025389331313234",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "5640900000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x36bd14eaf211d65164e1e0a2eab5c98b4b734875": {
+                    "balance": "0",
+                    "totalEarned": "4793001576184712984199",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "3392690000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xce2e6a4b8ade81fae333c235001238b7674cfdb1": {
+                    "balance": "0",
+                    "totalEarned": "607274420342014381132",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "457230000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x9793d88fd35101ee9ecddb4719011653912294c9": {
+                    "balance": "0",
+                    "totalEarned": "66295107315157349352584",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "49796120000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x764d4b3eaa1f2c09a03576422c25c546ba4fc5e0": {
+                    "balance": "0",
+                    "totalEarned": "88942638357521472191925",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "65498900000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x9f81bfbc8d7c1bc0496e45ddc744da78ca8e1a6b": {
+                    "balance": "0",
+                    "totalEarned": "185258033774167706915780",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "138288480000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xef3c44e0cb330fbdb6657b2bd39383a26ac62986": {
+                    "balance": "1132440000000000000000",
+                    "totalEarned": "4740567998893665126608",
+                    "earnedThisPeriod": "4279854626427652",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0x93cf0a22a26895650a8aae960bf85a01ec6a551c": {
+                    "balance": "0",
+                    "totalEarned": "18801475954577964296054",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "13828240000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xfe02733936a82f2e8e2aa63c165b45b640468cb7": {
+                    "balance": "0",
+                    "totalEarned": "2234095774172576577194",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "1619190000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x1a1608d260d0044f91b0d1721deb14ad6c8bac0f": {
+                    "balance": "30597930000000000000000",
+                    "totalEarned": "116893573364540524510697",
+                    "earnedThisPeriod": "115639408948473604",
+                    "totalClaimed": "86898000000000000000000",
+                    "claimedThisPeriod": "1223910000000000000000"
+                },
+                "0x555f9daad28487cee43cd226b9a2f33d57c98964": {
+                    "balance": "0",
+                    "totalEarned": "5579311952143266315465",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "4099280000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x33833541a74ef975d6e5eddeb636201694e32da9": {
+                    "balance": "0",
+                    "totalEarned": "22334201719284812648194",
+                    "earnedThisPeriod": "26634795402917488",
+                    "totalClaimed": "16575290000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x248784af80094fe92f915674b2f4409366443562": {
+                    "balance": "0",
+                    "totalEarned": "10902462280899354806524",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "7944840000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xb9c462885ebef1e8ad72f45e410d623f1bfbf2b4": {
+                    "balance": "77670000000000000000",
+                    "totalEarned": "250178762405896346649",
+                    "earnedThisPeriod": "293539886293875",
+                    "totalClaimed": "99410000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xd97e54eb8d316d968e1e2ecf68db7a4bff43909b": {
+                    "balance": "0",
+                    "totalEarned": "357514624370989810257",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "199950000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xa78d59f05acf567e60f70b8bdae5c88825c5b3c1": {
+                    "balance": "0",
+                    "totalEarned": "1349151267546008146065",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "622160000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x681fe9c0045d0ee67bf0940d58cd57c3b04952d7": {
+                    "balance": "5000000000000000",
+                    "totalEarned": "232615459388287899313",
+                    "earnedThisPeriod": "18896606560",
+                    "totalClaimed": "124540000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xc3bf2ba5314af887b7f8db20c16d81bf6c5f6933": {
+                    "balance": "923770000000000000000",
+                    "totalEarned": "2755205748904592834928",
+                    "earnedThisPeriod": "3491223648277235",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0xf3b31c1af8654a902eb7a23ad1faa8a94d43f8b8": {
+                    "balance": "269873529971341630000",
+                    "totalEarned": "513469545302187407336",
+                    "earnedThisPeriod": "1019938783333517",
+                    "totalClaimed": "358780000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x1ce7c4930550677b6578c76107e44db403961002": {
+                    "balance": "0",
+                    "totalEarned": "88386541663571378981320",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "66692670000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xcac2edcd082628ba3ba31b3b74537792550319e6": {
+                    "balance": "409816979997054843900",
+                    "totalEarned": "395883030403192723523",
+                    "earnedThisPeriod": "1548830046473989",
+                    "totalClaimed": "282710000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x0ae11191d4ddae4c726bef6c542254f98084fd0e": {
+                    "balance": "0",
+                    "totalEarned": "6880753179759209465407",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "5147840000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0xd3ec9916304b3d875125b4d3801157b85cf37253": {
+                    "balance": "8475959999999999000000",
+                    "totalEarned": "23378112590949155984695",
+                    "earnedThisPeriod": "32033376266659353",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0x1d652ddc63152e9099e6802e7308d0b0b74b3fea": {
+                    "balance": "6754760000000000000000",
+                    "totalEarned": "18565931196773264605315",
+                    "earnedThisPeriod": "25528408424648058",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0xf91a4b731c8dea1b2802edc6d9560b41969ca8e1": {
+                    "balance": "257120668155285270000",
+                    "totalEarned": "704524311859600164050",
+                    "earnedThisPeriod": "971741620884609",
+                    "totalClaimed": "519380000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x8f0d4cd6f0dc60e315188ccc1c42f266e8de86ae": {
+                    "balance": "135356090000000000000000",
+                    "totalEarned": "318935848017274500339861",
+                    "earnedThisPeriod": "511554155630018061",
+                    "totalClaimed": "242438740000000000000000",
+                    "claimedThisPeriod": "1353560000000000000000"
+                },
+                "0x80455babe586df367395bcfa35b2f904d7cce070": {
+                    "balance": "7211430000000001000000",
+                    "totalEarned": "13171166290440920579008",
+                    "earnedThisPeriod": "27254311088145215",
+                    "totalClaimed": "0",
+                    "claimedThisPeriod": "0"
+                },
+                "0x035f4a089e99bb14fa010a6ce80e9640e1dd01fc": {
+                    "balance": "21741852078065476040457",
+                    "totalEarned": "34318366546429644497551",
+                    "earnedThisPeriod": "82169444918418803",
+                    "totalClaimed": "25220460000000000000000",
+                    "claimedThisPeriod": "2174180000000000000000"
+                },
+                "0x248bf13aa779c4c9822df233d18607147d348473": {
+                    "balance": "0",
+                    "totalEarned": "91293950004190589579",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "73080000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x5e225490e47249f364fa20e68febddb3f74b297f": {
+                    "balance": "0",
+                    "totalEarned": "2348910529374981072040",
+                    "earnedThisPeriod": "0",
+                    "totalClaimed": "1503660000000000000000",
+                    "claimedThisPeriod": "0"
+                },
+                "0x54c6adea5d5f8613c1f43b854db77cc5ffa7e583": {
+                    "balance": "0",
+                    "totalEarned": "4909374852281791292812",
+                    "earnedThisPeriod": "24697611940822715",
+                    "totalClaimed": "3398160000000000000000",
+                    "claimedThisPeriod": "3398160000000000000000"
+                },
+                "0xaa0833da4dd529316f2a46957346986f615ffa62": {
+                    "balance": "0",
+                    "totalEarned": "74481508549156542775642",
+                    "earnedThisPeriod": "523324700683022076",
+                    "totalClaimed": "51234100000000000000000",
+                    "claimedThisPeriod": "51234100000000000000000"
+                },
+                "0xeff139c7b2a2ab9f052aab79de77f09b39839aa7": {
+                    "balance": "47350000000000000000",
+                    "totalEarned": "16733203617644833212",
+                    "earnedThisPeriod": "178950864117613",
                     "totalClaimed": "0",
                     "claimedThisPeriod": "0"
                 }
@@ -908,10 +1273,10 @@
             "rewardPending": "0"
         },
         "0xc7d35c4c06d54bee556228032e40e9501a6bee81": {
-            "balance": "64477664219999999980000",
-            "totalEarned": "290296383020657158379135",
-            "totalClaimed": "109290270000000000000000",
-            "rewardPending": "108020950000000000000000"
+            "balance": "0",
+            "totalEarned": "326532298305293861880469",
+            "totalClaimed": "244391840000000000000000",
+            "rewardPending": "0"
         },
         "0x1bc7998b9f091ff13792ef1aff11c8a4392971d2": {
             "balance": "0",
@@ -921,27 +1286,27 @@
         },
         "0xac1513a6c4c3e74cb0c1f77c8cbbbf22a2400e33": {
             "balance": "226104348969072539600000",
-            "totalEarned": "858314967314983520334355",
-            "totalClaimed": "289586830000000000000000",
-            "rewardPending": "348200690000000000000000"
+            "totalEarned": "1004915191035208383073335",
+            "totalClaimed": "719185090000000000000000",
+            "rewardPending": "22610430000000000000000"
         },
         "0x12fe8ececabd64640578c01c7bb9e7404028c10f": {
             "balance": "395270000000000000000",
-            "totalEarned": "1602554703577829871332",
+            "totalEarned": "1858837568963225265320",
             "totalClaimed": "39520000000000000000",
-            "rewardPending": "1142330000000000000000"
+            "rewardPending": "1324150000000000000000"
         },
         "0x5be4cb2f7b2c8ab1b0aae6cf5aa4a1cc398aeb6d": {
-            "balance": "4533387140276367663319",
-            "totalEarned": "18145629249489468218680",
-            "totalClaimed": "1042850000000000000000",
-            "rewardPending": "12363500000000000000000"
+            "balance": "7140276367663319",
+            "totalEarned": "20995338281684370655286",
+            "totalClaimed": "15491700000000000000000",
+            "rewardPending": "0"
         },
         "0xada16d1880d60e1bc6258923981a6777cabf4f53": {
             "balance": "785930000000000000000",
-            "totalEarned": "3184497030899628822382",
+            "totalEarned": "3694073756662635885900",
             "totalClaimed": "1092440000000000000000",
-            "rewardPending": "1257480000000000000000"
+            "rewardPending": "1619010000000000000000"
         },
         "0x86d71b18817b466d2f08bee4c5352b724bbe9e2a": {
             "balance": "0",
@@ -980,22 +1345,22 @@
             "rewardPending": "0"
         },
         "0xf23cac0f7d6c81acf1138d1296fd2e8655d63670": {
-            "balance": "13891840000000000000000",
-            "totalEarned": "55526103885733597502478",
-            "totalClaimed": "0",
-            "rewardPending": "41258760000000000000000"
+            "balance": "0",
+            "totalEarned": "64407472428692779639201",
+            "totalClaimed": "47649010000000000000000",
+            "rewardPending": "0"
         },
         "0xbf331a476e2e31f8fe0aac6a15db0e873a2249b7": {
             "balance": "175000000000000000000",
-            "totalEarned": "2159099721760008674392",
+            "totalEarned": "2272565204701907108242",
             "totalClaimed": "0",
-            "rewardPending": "1589940000000000000000"
+            "rewardPending": "1670440000000000000000"
         },
         "0x8c3de974d92d0bf15387eff82d68bf7223fcd6f4": {
-            "balance": "63474860000000000000000",
-            "totalEarned": "120807631848379307016493",
-            "totalClaimed": "76995330000000000000000",
-            "rewardPending": "9521220000000000000000"
+            "balance": "0",
+            "totalEarned": "161963092674490114004196",
+            "totalClaimed": "115714990000000000000000",
+            "rewardPending": "0"
         },
         "0x63f660dd40436394377452613c165c51cdbd4de6": {
             "balance": "0",
@@ -1010,16 +1375,16 @@
             "rewardPending": "0"
         },
         "0xce2e6a4b8ade81fae333c235001238b7674cfdb1": {
-            "balance": "141560000000000000000",
-            "totalEarned": "537794079906654704584",
-            "totalClaimed": "172700000000000000000",
-            "rewardPending": "232150000000000000000"
+            "balance": "0",
+            "totalEarned": "607274420342014381132",
+            "totalClaimed": "457230000000000000000",
+            "rewardPending": "0"
         },
         "0x9793d88fd35101ee9ecddb4719011653912294c9": {
-            "balance": "15952000000000000000000",
-            "totalEarned": "58926651206408156102712",
-            "totalClaimed": "19965880000000000000000",
-            "rewardPending": "24087520000000000000000"
+            "balance": "0",
+            "totalEarned": "66295107315157349352584",
+            "totalClaimed": "49796120000000000000000",
+            "rewardPending": "0"
         },
         "0x764d4b3eaa1f2c09a03576422c25c546ba4fc5e0": {
             "balance": "0",
@@ -1028,16 +1393,16 @@
             "rewardPending": "0"
         },
         "0x9f81bfbc8d7c1bc0496e45ddc744da78ca8e1a6b": {
-            "balance": "44834338401456077678449",
-            "totalEarned": "156822749864113234197271",
-            "totalClaimed": "115871320000000000000000",
-            "rewardPending": "1793370000000000000000"
+            "balance": "0",
+            "totalEarned": "185258033774167706915780",
+            "totalClaimed": "138288480000000000000000",
+            "rewardPending": "0"
         },
         "0xef3c44e0cb330fbdb6657b2bd39383a26ac62986": {
             "balance": "1132440000000000000000",
-            "totalEarned": "4006323133163816769870",
+            "totalEarned": "4740567998893665126608",
             "totalClaimed": "0",
-            "rewardPending": "3012290000000000000000"
+            "rewardPending": "3533210000000000000000"
         },
         "0x93cf0a22a26895650a8aae960bf85a01ec6a551c": {
             "balance": "0",
@@ -1053,9 +1418,9 @@
         },
         "0x1a1608d260d0044f91b0d1721deb14ad6c8bac0f": {
             "balance": "30597930000000000000000",
-            "totalEarned": "97054665338983939676114",
-            "totalClaimed": "71599060000000000000000",
-            "rewardPending": "1223910000000000000000"
+            "totalEarned": "116893573364540524510697",
+            "totalClaimed": "86898000000000000000000",
+            "rewardPending": "0"
         },
         "0x555f9daad28487cee43cd226b9a2f33d57c98964": {
             "balance": "0",
@@ -1064,10 +1429,10 @@
             "rewardPending": "0"
         },
         "0x33833541a74ef975d6e5eddeb636201694e32da9": {
-            "balance": "6184810000000000000000",
-            "totalEarned": "18328737011321249599849",
-            "totalClaimed": "0",
-            "rewardPending": "13730270000000000000000"
+            "balance": "0",
+            "totalEarned": "22334201719284812648194",
+            "totalClaimed": "16575290000000000000000",
+            "rewardPending": "0"
         },
         "0x248784af80094fe92f915674b2f4409366443562": {
             "balance": "0",
@@ -1077,9 +1442,9 @@
         },
         "0xb9c462885ebef1e8ad72f45e410d623f1bfbf2b4": {
             "balance": "77670000000000000000",
-            "totalEarned": "199819539205340624608",
+            "totalEarned": "250178762405896346649",
             "totalClaimed": "99410000000000000000",
-            "rewardPending": "47370000000000000000"
+            "rewardPending": "83100000000000000000"
         },
         "0xd97e54eb8d316d968e1e2ecf68db7a4bff43909b": {
             "balance": "0",
@@ -1095,75 +1460,75 @@
         },
         "0x681fe9c0045d0ee67bf0940d58cd57c3b04952d7": {
             "balance": "5000000000000000",
-            "totalEarned": "232612217517346702215",
+            "totalEarned": "232615459388287899313",
             "totalClaimed": "124540000000000000000",
-            "rewardPending": "0"
+            "rewardPending": "10000000000000000"
         },
         "0xc3bf2ba5314af887b7f8db20c16d81bf6c5f6933": {
             "balance": "923770000000000000000",
-            "totalEarned": "2156257125034664170713",
+            "totalEarned": "2755205748904592834928",
             "totalClaimed": "0",
-            "rewardPending": "1607350000000000000000"
+            "rewardPending": "2032290000000000000000"
         },
         "0xf3b31c1af8654a902eb7a23ad1faa8a94d43f8b8": {
-            "balance": "179125781273203620000",
-            "totalEarned": "383905150754448003662",
-            "totalClaimed": "285610000000000000000",
-            "rewardPending": "1790000000000000000"
+            "balance": "269873529971341630000",
+            "totalEarned": "513469545302187407336",
+            "totalClaimed": "358780000000000000000",
+            "rewardPending": "18890000000000000000"
         },
         "0x1ce7c4930550677b6578c76107e44db403961002": {
-            "balance": "41117489999999999800000",
-            "totalEarned": "62546960918592456934889",
-            "totalClaimed": "13464180000000000000000",
-            "rewardPending": "34314450000000000000000"
+            "balance": "0",
+            "totalEarned": "88386541663571378981320",
+            "totalClaimed": "66692670000000000000000",
+            "rewardPending": "0"
         },
         "0xcac2edcd082628ba3ba31b3b74537792550319e6": {
-            "balance": "191655883091775041900",
-            "totalEarned": "173934594650042793855",
-            "totalClaimed": "129760000000000000000",
-            "rewardPending": "1910000000000000000"
+            "balance": "409816979997054843900",
+            "totalEarned": "395883030403192723523",
+            "totalClaimed": "282710000000000000000",
+            "rewardPending": "4090000000000000000"
         },
         "0x0ae11191d4ddae4c726bef6c542254f98084fd0e": {
-            "balance": "2498952774441262600000",
-            "totalEarned": "5284912499754278647008",
-            "totalClaimed": "0",
-            "rewardPending": "3998320000000000000000"
+            "balance": "0",
+            "totalEarned": "6880753179759209465407",
+            "totalClaimed": "5147840000000000000000",
+            "rewardPending": "0"
         },
         "0xd3ec9916304b3d875125b4d3801157b85cf37253": {
             "balance": "8475959999999999000000",
-            "totalEarned": "17882518906399365493782",
+            "totalEarned": "23378112590949155984695",
             "totalClaimed": "0",
-            "rewardPending": "13561530000000000000000"
+            "rewardPending": "17460470000000000000000"
         },
         "0x1d652ddc63152e9099e6802e7308d0b0b74b3fea": {
             "balance": "6754760000000000000000",
-            "totalEarned": "14186319165021162519414",
+            "totalEarned": "18565931196773264605315",
             "totalClaimed": "0",
-            "rewardPending": "10807610000000000000000"
+            "rewardPending": "13914800000000000000000"
         },
         "0xf91a4b731c8dea1b2802edc6d9560b41969ca8e1": {
             "balance": "257120668155285270000",
-            "totalEarned": "537813907364839886027",
-            "totalClaimed": "0",
-            "rewardPending": "411390000000000000000"
+            "totalEarned": "704524311859600164050",
+            "totalClaimed": "519380000000000000000",
+            "rewardPending": "10280000000000000000"
         },
         "0x8f0d4cd6f0dc60e315188ccc1c42f266e8de86ae": {
-            "balance": "128874290000000000000000",
-            "totalEarned": "232904552295062490076804",
-            "totalClaimed": "0",
-            "rewardPending": "181471300000000000000000"
+            "balance": "135356090000000000000000",
+            "totalEarned": "318935848017274500339861",
+            "totalClaimed": "242438740000000000000000",
+            "rewardPending": "0"
         },
         "0x80455babe586df367395bcfa35b2f904d7cce070": {
             "balance": "7211430000000001000000",
-            "totalEarned": "8495461218145522085955",
+            "totalEarned": "13171166290440920579008",
             "totalClaimed": "0",
-            "rewardPending": "6562400000000000000000"
+            "rewardPending": "9879650000000000000000"
         },
         "0x035f4a089e99bb14fa010a6ce80e9640e1dd01fc": {
             "balance": "21741852078065476040457",
-            "totalEarned": "20221510854492402852876",
-            "totalClaimed": "15001830000000000000000",
-            "rewardPending": "217410000000000000000"
+            "totalEarned": "34318366546429644497551",
+            "totalClaimed": "25220460000000000000000",
+            "rewardPending": "0"
         },
         "0x248bf13aa779c4c9822df233d18607147d348473": {
             "balance": "0",
@@ -1172,16 +1537,28 @@
             "rewardPending": "0"
         },
         "0x5e225490e47249f364fa20e68febddb3f74b297f": {
-            "balance": "7914042188659422132318",
-            "totalEarned": "1352301611675325131695",
-            "totalClaimed": "633120000000000000000",
-            "rewardPending": "79140000000000000000"
+            "balance": "0",
+            "totalEarned": "2348910529374981072040",
+            "totalClaimed": "1503660000000000000000",
+            "rewardPending": "0"
         },
         "0x54c6adea5d5f8613c1f43b854db77cc5ffa7e583": {
-            "balance": "6534933101129729398958",
-            "totalEarned": "672292907637889898235",
+            "balance": "0",
+            "totalEarned": "4909374852281791292812",
+            "totalClaimed": "3398160000000000000000",
+            "rewardPending": "0"
+        },
+        "0xaa0833da4dd529316f2a46957346986f615ffa62": {
+            "balance": "0",
+            "totalEarned": "74481508549156542775642",
+            "totalClaimed": "51234100000000000000000",
+            "rewardPending": "0"
+        },
+        "0xeff139c7b2a2ab9f052aab79de77f09b39839aa7": {
+            "balance": "47350000000000000000",
+            "totalEarned": "16733203617644833212",
             "totalClaimed": "0",
-            "rewardPending": "392090000000000000000"
+            "rewardPending": "11360000000000000000"
         }
     }
 }

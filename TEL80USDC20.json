@@ -1679,8 +1679,8 @@
         {
             "startBlock": 19659135,
             "startBlockTs": 1632956224,
-            "endBlock": 19685749,
-            "endBlockTs": 1633018346,
+            "endBlock": 19686455,
+            "endBlockTs": 1633019959,
             "addresses": {
                 "0x258d77ad7f27185bd8f7e3b024cd075a9fa576b0": {
                     "balance": "0",
@@ -1760,7 +1760,7 @@
                     "claimedThisPeriod": "0"
                 },
                 "0xbe211c85ef5f1825a913c25c57a0daccaaddecf8": {
-                    "balance": "391220930000000000000000",
+                    "balance": "10000000000000000",
                     "totalEarned": "49478563781898246897850",
                     "earnedThisPeriod": "11915802507090236",
                     "totalClaimed": "0",
@@ -2369,7 +2369,7 @@
             "rewardPending": "0"
         },
         "0xbe211c85ef5f1825a913c25c57a0daccaaddecf8": {
-            "balance": "391220930000000000000000",
+            "balance": "10000000000000000",
             "totalEarned": "49478563781898246897850",
             "totalClaimed": "0",
             "rewardPending": "0"
