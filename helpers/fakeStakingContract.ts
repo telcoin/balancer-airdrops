@@ -43,9 +43,8 @@ export class FakeStaking {
     }
     
     stake(account: string, amount: ethers.BigNumber, ts: number) {
-        if (account === ZERO_ADDRESS) {
-            console.log('how');
-        }
+        this.solRequire(account !== ZERO_ADDRESS, "Zero address cannot stake");
+
         this.updateReward(account, ts);
     
         this.solRequire(amount.gt(0), "Cannot stake 0");
@@ -56,6 +55,8 @@ export class FakeStaking {
     }
     
     withdraw(account: string, amount: ethers.BigNumber, ts: number) {
+        this.solRequire(account !== ZERO_ADDRESS, "Zero address cannot withdraw");
+
         this.updateReward(account, ts);
         this.solRequire(amount.gt(0), "Cannot withdraw 0");
         this.totalSupply = this.totalSupply.sub(amount);

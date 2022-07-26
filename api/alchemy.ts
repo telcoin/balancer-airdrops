@@ -4,6 +4,14 @@ import { AlchemyTransfersParameters, AlchemyTransfersResponse, Param, Transfer }
 const KEY = process.env.ALCHEMYKEY;
 const APIURL = "https://polygon-mainnet.g.alchemy.com/v2/" + KEY;
 
+function wait(t: number) {
+    return new Promise<void>((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, t);
+    });
+}
+
 async function getLastBlockNum(): Promise<number> {
     const body = {
         "jsonrpc":"2.0",
@@ -105,13 +113,22 @@ export async function getTimestampOfBlock(block: number): Promise<number> {
 
     const response = await fetch(APIURL, opts);
     const resJson = await response.json();
-
-    return Number(resJson.result.timestamp);
-    
+    try {
+        return Number(resJson.result.timestamp);
+    }
+    catch (e) {
+        if (resJson.error !== undefined && resJson.error.code == 429) {
+            console.log(429);
+            await wait(1000);
+            return getTimestampOfBlock(block);
+        }
+        
+        throw e;
+    }
 }
 
 export async function getTimestampsOfBlocks(blocks: number[]): Promise<{[key: number]: number}> {
-    const batchSize = 5;
+    const batchSize = 10;
     const out: {[key: number]: number} = {};
 
     for (let i = 0; i < blocks.length; i += batchSize) {
@@ -120,6 +137,7 @@ export async function getTimestampsOfBlocks(blocks: number[]): Promise<{[key: nu
         for (let j = 0; j < thisBatch.length; j++) {
             out[thisBatch[j]] = answer[j];
         }
+        console.log(i,blocks.length);
     }
 
     return out;
