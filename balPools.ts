@@ -10,7 +10,7 @@ import { FakeStaking } from './helpers/fakeStakingContract';
 
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 const TEL_ADDRESS = '0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32'.toLowerCase();
-const WEEK = 112;
+const WEEK = 150;
 const START_TIMESTAMP = getWeekStartTimestamp(WEEK);
 const END_TIMESTAMP = getWeekEndTimestamp(WEEK);
 

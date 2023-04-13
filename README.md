@@ -19,10 +19,4 @@ both scripts will output a csv to `./reports`
 
 Adjust `WEEK_NUMBER` to current week.
 
-`$ ts-node balPools.ts`
-
-### dfxkpi.ts
-
-Adjust `START_BLOCK` and `END_BLOCK`
-
-`$ ts-node dfxkpi.ts`
+`$ yarn ts-node balPools.ts`

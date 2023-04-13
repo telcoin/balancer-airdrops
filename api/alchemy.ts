@@ -1,5 +1,7 @@
-import fetch from "cross-fetch";
+import fetch from 'cross-fetch';
 import { AlchemyTransfersParameters, AlchemyTransfersResponse, Param, Transfer } from "./types";
+
+const AbortController = globalThis.AbortController;
 
 const KEY = process.env.ALCHEMYKEY;
 const APIURL = "https://polygon-mainnet.g.alchemy.com/v2/" + KEY;
@@ -62,18 +64,19 @@ export async function getTransfers(erc20Address: string, startblock: number, end
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),
-            redirect: "follow"
+            redirect: "follow",
         } as RequestInit;
 
         const response = await fetch(APIURL, opts);
         const resJson = await response.json() as AlchemyTransfersResponse;
-        // console.log(resJson);
+        console.log(resJson)
+
         resJson.result.transfers.forEach(tx => {
             tx.from = tx.from.toLowerCase();
             tx.to = tx.to.toLowerCase();
             tx.rawContract.address = tx.rawContract.address.toLowerCase();
             ans.push(tx);
-        })
+        });
 
         if (resJson.result.pageKey === undefined) {
             return ans;
@@ -104,31 +107,35 @@ export async function getTimestampOfBlock(block: number): Promise<number> {
         ]
     };
 
+    const controller = new AbortController();
+    const timeout = setTimeout(() => {
+        controller.abort();
+    }, 1000);
+
     const opts = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
-        redirect: "follow"
+        redirect: "follow",
+        signal: controller.signal
     } as RequestInit;
-
-    const response = await fetch(APIURL, opts);
-    const resJson = await response.json();
+    
     try {
+        const response = await fetch(APIURL, opts);
+        const resJson = await response.json();
+
+        clearTimeout(timeout);
+
         return Number(resJson.result.timestamp);
     }
     catch (e) {
-        if (resJson.error !== undefined && resJson.error.code == 429) {
-            console.log(429);
-            await wait(1000);
-            return getTimestampOfBlock(block);
-        }
-        
-        throw e;
+        console.log(e);
+        return getTimestampOfBlock(block);
     }
 }
 
 export async function getTimestampsOfBlocks(blocks: number[]): Promise<{[key: number]: number}> {
-    const batchSize = 10;
+    const batchSize = 5;
     const out: {[key: number]: number} = {};
 
     for (let i = 0; i < blocks.length; i += batchSize) {
